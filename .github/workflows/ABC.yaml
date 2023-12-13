@@ -7,5 +7,6 @@ jobs:
   HelloWorld:
     runs-on: [ windows-latest ]
     steps:
-     - run: New-BcAuthContext -includeDeviceLogin | New-ALGoAuthContext | set-Clipboard
+     - run: Install-Module -Name BcContainerHelper -RequiredVersion 6.0.2
+    #  - run: New-BcAuthContext -includeDeviceLogin | New-ALGoAuthContext | set-Clipboard
        shell: pwsh
