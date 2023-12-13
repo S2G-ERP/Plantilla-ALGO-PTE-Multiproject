@@ -19,5 +19,5 @@ jobs:
   HelloWorld:
     runs-on: [ windows-latest ]
     steps:
-     - powershell: echo Hello
-       uses: powershell
+     - run: echo Hello, world
+       shell: pwsh
